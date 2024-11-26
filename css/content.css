@@ -1,0 +1,241 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 768px) {
+    padding-top: 70px;
+  }
+}
+.hero-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.play-store-button {
+  position: absolute;
+  bottom: 70px;
+}
+
+.carousel {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 300px;
+  @media (min-width: 360px) {
+    width: 361px;
+  }
+  @media (min-width: 768px) {
+    width: 500px;
+  }
+  @media (min-width: 1024px) {
+    width: 745px;
+  }
+  @media (min-width: 1440px) {
+    width: 990px;
+  }
+}
+.carousel-track {
+  display: flex;
+  gap: 10px;
+  border-radius: 25px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #29186d;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+  border-radius: 8px;
+}
+.carousel-item img {
+  border-radius: 15px;
+  width: 135px;
+  @media (min-width: 360px) {
+    width: 166px;
+  }
+  @media (min-width: 768px) {
+    width: 235px;
+  }
+}
+.navigation {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.carousel-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 25px;
+  border: none;
+  padding: 10px;
+  background: var(--accent-color);
+}
+
+.about-container {
+  position: relative;
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+  }
+}
+.about-img {
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 360px) {
+    width: 360px;
+  }
+  @media (min-width: 1024px) {
+    width: 542px;
+  }
+}
+.about-wrapper {
+  position: absolute;
+  left: 50%;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(-50%) translateY(0);
+  bottom: 0;
+  @media (min-width: 1024px) {
+    position: relative;
+    left: 0;
+    transform: translate(0);
+    align-items: flex-start;
+  }
+}
+.about-wrapper h2 {
+  margin-bottom: 10px;
+  @media (min-width: 1024px) {
+    text-align: left;
+  }
+}
+.about-wrapper p {
+  width: 100%;
+  max-width: 460px;
+  margin-bottom: 20px;
+
+  font-family: var(--third-family);
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  @media (min-width: 360px) {
+    max-width: 320px;
+  }
+  @media (min-width: 1024px) {
+    text-align: left;
+  }
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.benefit-card {
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: var(--accent-color);
+}
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+.benefit-title {
+  margin-bottom: 6px;
+
+  font-weight: 900;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+}
+.benefit-description {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  @media (min-width: 1920px) {
+    grid-template-columns: 400px 400px 400px 400px;
+  }
+}
+/* Card styles */
+.review-card {
+  background: var(--accent-color);
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.review-card:hover {
+  transform: translateY(-5px);
+}
+.review-icon {
+  width: 120px;
+  height: 120px;
+}
+.review-title {
+  font-weight: 900;
+  font-size: 32px;
+  text-align: center;
+}
+.review-text {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}
+
+.terms-section {
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  line-height: 1.6;
+}
+.terms-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.terms-subtitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.terms-content p {
+  margin-bottom: 15px;
+}
+.terms-link {
+  color: #6fc3ff;
+  text-decoration: underline;
+}
+.terms-link:hover {
+  color: #b3d4ff;
+}

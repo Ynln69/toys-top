@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toys Top</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <div class="logo">TOYS POP</div>
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="./">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+          </ul>
+        </nav>
+        <button class="burger-menu" aria-label="Open menu">
+          <span class="burger"></span>
+          <span class="burger"></span>
+          <span class="burger"></span>
+        </button>
+      </div>
+    </header>
+    <div class="mobile-menu">
+      <div class="mobile-menu-header">
+        <a href="./" class="mobile-menu-logo">TOYS POP</a>
+        <button class="close-menu" aria-label="Close menu">
+          <img src="./img/akar-icons_cross.svg" alt="close burger-menu" />
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <section class="hero">
+        <div class="hero-container">
+          <div>
+            <img src="./img/hero-img.png" alt="Toys Pop" class="hero-image" />
+          </div>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.madovergames.ToysPop&hl=en"
+            class="play-store-button button"
+            target="_blank"
+          >
+            <img
+              src="./img/logos_google-play-icon.svg"
+              alt="Get it on Google Play"
+              class="play-store-image"
+              width="48"
+            />
+            <img
+              src="./img/logos_google-play-icon-text.svg"
+              alt="Get it on Google Play"
+              class="play-store-image"
+            />
+          </a>
+        </div>
+      </section>
+      <section class="photos-section section" id="gallery">
+        <div class="container">
+          <h2 class="title">Photos</h2>
+          <div class="carousel">
+            <ul class="carousel-track">
+              <li class="carousel-item">
+                <img src="./img/item1.webp" alt="Photo 1" />
+              </li>
+              <li class="carousel-item">
+                <img src="./img/item2.webp" alt="Photo 2" />
+              </li>
+              <li class="carousel-item">
+                <img src="./img/item3.webp" alt="Photo 3" />
+              </li>
+              <li class="carousel-item">
+                <img src="./img/item4.webp" alt="Photo 4" />
+              </li>
+              <li class="carousel-item">
+                <img src="./img/item5.webp" alt="Photo 3" />
+              </li>
+              <li class="carousel-item">
+                <img src="./img/item6.webp" alt="Photo 4" />
+              </li>
+            </ul>
+            <div class="navigation">
+              <button class="carousel-btn left-btn" aria-label="Previous">
+                <img src="./img/left.svg" alt="" />
+              </button>
+              <button class="carousel-btn right-btn" aria-label="Next">
+                <img src="./img/right.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="about">
+        <div class="container">
+          <div class="about-container">
+            <div class="about-img-thumb">
+              <picture>
+                <source
+                  srcset="./img/about-m.png"
+                  media="(max-width: 1023px)"
+                />
+                <source
+                  srcset="./img/about-d.png"
+                  media="(min-width: 1024px)"
+                />
+                <img src="./img/about-m.png" alt="" class="about-img" />
+              </picture>
+            </div>
+            <div class="about-wrapper">
+              <h2 class="title">About us</h2>
+              <p>
+                Toys Pop invites players to solve complex puzzles by spinning
+                different parts of a beautiful landscape to align and complete
+                the scene, offering a unique twist on traditional puzzle games.
+              </p>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.madovergames.ToysPop&hl=en"
+                class="button"
+                target="_blank"
+              >
+                <img
+                  src="./img/logos_google-play-icon.svg"
+                  alt="Get it on Google Play"
+                  class="play-store-image"
+                  width="48"
+                />
+                <img
+                  src="./img/logos_google-play-icon-text.svg"
+                  alt="Get it on Google Play"
+                  class="play-store-image"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="benefits">
+        <div class="container">
+          <h2 class="title">Benefits</h2>
+          <ul class="benefits-grid">
+            <li class="benefit-card">
+              <h3 class="benefit-title">Social Integration</h3>
+              <p class="benefit-description">
+                Complete with friends and share your progress on social media.
+              </p>
+            </li>
+            <li class="benefit-card">
+              <h3 class="benefit-title">Social Integration</h3>
+              <p class="benefit-description">
+                Complete with friends and share your progress on social media.
+              </p>
+            </li>
+            <li class="benefit-card">
+              <h3 class="benefit-title">Progressive Difficulty</h3>
+              <p class="benefit-description">
+                Levels increase in complexity as you advance, providing a
+                satisfying challenge.
+              </p>
+            </li>
+            <li class="benefit-card">
+              <h3 class="benefit-title">Progressive Difficulty</h3>
+              <p class="benefit-description">
+                Levels increase in complexity as you advance, providing a
+                satisfying challenge.
+              </p>
+            </li>
+            <li class="benefit-card">
+              <h3 class="benefit-title">Daily Challenges</h3>
+              <p class="benefit-description">
+                New puzzles every day to keep your skills sharp.
+              </p>
+            </li>
+            <li class="benefit-card">
+              <h3 class="benefit-title">Daily Challenges</h3>
+              <p class="benefit-description">
+                New puzzles every day to keep your skills sharp.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section" id="reviews">
+        <div class="container">
+          <h2 class="title">Reviews</h2>
+          <ul class="reviews-grid">
+            <li class="review-card">
+              <img
+                src="./img/heart-icon.png"
+                alt="Heart Icon"
+                class="review-icon"
+              />
+              <h3 class="review-title">Puzzle Pro</h3>
+              <p class="review-text">
+                I'm completely hooked by the innovative spinning mechanics! It's
+                refreshing and highly addictive.
+              </p>
+            </li>
+            <li class="review-card">
+              <img
+                src="./img/diamond-icon.png"
+                alt="Diamond Icon"
+                class="review-icon"
+              />
+              <h3 class="review-title">Puzzle Pro</h3>
+              <p class="review-text">
+                I'm completely hooked by the innovative spinning mechanics! It's
+                refreshing and highly addictive.
+              </p>
+            </li>
+            <li class="review-card">
+              <img
+                src="./img/coin-icon.png"
+                alt="Coin Icon"
+                class="review-icon"
+              />
+              <h3 class="review-title">Puzzle Pro</h3>
+              <p class="review-text">
+                I'm completely hooked by the innovative spinning mechanics! It's
+                refreshing and highly addictive.
+              </p>
+            </li>
+            <li class="review-card">
+              <img
+                src="./img/crown-icon.png"
+                alt="Crown Icon"
+                class="review-icon"
+              />
+              <h3 class="review-title">Puzzle Pro</h3>
+              <p class="review-text">
+                I'm completely hooked by the innovative spinning mechanics! It's
+                refreshing and highly addictive.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <nav class="footer-nav">
+          <a href="./privacy-policy.html" class="footer-link">PRIVACY POLICY</a>
+          <a href="./terms.html" class="footer-link">TERMS AND CONDITIONS</a>
+        </nav>
+        <p class="footer-text">All rights reserved toystopp.com / 2024</p>
+      </div>
+    </footer>
+
+    <script src="./js/mob-menu.js"></script>
+    <script src="./js/gallery.js"></script>
+  </body>
+</html>

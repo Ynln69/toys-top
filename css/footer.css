@@ -1,0 +1,30 @@
+.footer {
+  background: var(--accent-color);
+  padding: 20px 0;
+}
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 60px;
+  @media (min-width: 1024px) {
+    margin-bottom: 20px;
+  }
+}
+.footer-link {
+  font-weight: 900;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+.footer-link:hover {
+  color: #cfcfcf;
+}
+.footer-text {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}
