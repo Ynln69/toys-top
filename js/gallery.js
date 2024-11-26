@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentIndex = 0;
 
   const updateCarousel = () => {
-    const itemWidth = items[0].getBoundingClientRect().width + 20; // Item + margin
+    const itemWidth = items[0].getBoundingClientRect().width + 20; 
     track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
   };
 
@@ -21,6 +21,5 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCarousel();
   });
 
-  // Initial setup
   updateCarousel();
 });

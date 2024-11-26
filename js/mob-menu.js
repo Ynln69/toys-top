@@ -25,17 +25,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // Ініціалізація логіки
+
   initializeMenu();
 
-  // Спостереження за змінами в DOM
+ 
   const observer = new MutationObserver(() => {
     if (
       document.querySelector(".burger-menu") &&
       document.querySelector(".mobile-menu-overlay")
     ) {
       initializeMenu();
-      observer.disconnect(); // Зупиняємо спостереження після успішної ініціалізації
+      observer.disconnect();
     }
   });
 
