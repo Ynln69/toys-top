@@ -37,6 +37,11 @@
 .nav-links a {
   font-weight: 500;
   font-size: 24px;
+  transition: color var(--time-function);
+  &:hover,
+  &:focus {
+    color: rgb(111, 92, 190);
+  }
 }
 
 .burger-menu {
@@ -60,11 +65,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(74, 60, 131, 0.7); 
+  background: rgba(74, 60, 131, 0.7);
   backdrop-filter: blur(5px);
-  z-index: 5; 
+  z-index: 5;
   opacity: 0;
-  pointer-events: none; 
+  pointer-events: none;
   transition: opacity 0.3s ease;
 }
 .mobile-menu.active {
@@ -119,6 +124,11 @@
   font-family: var(--font3);
   font-weight: 600;
   font-size: 20px;
+  transition: color var(--time-function);
+  &:hover,
+  &:focus {
+    color: rgb(111, 92, 190);
+  }
 }
 
 /* Media Queries */
